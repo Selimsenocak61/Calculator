@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator{
+    width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(
+      4,
+      1fr /* 1fr, bir fraksiyon birimini temsil eder ve genellikle bir sütunun genişliğini ifade eder*/
+    ); /*bir grid konteynerinde toplam dört sütunun olacağını ve her bir sütunun genişliğinin eşit olacağını belirtir.*/
+    grid-gap: 20px; /*grid konteynerindeki sıralar ve sütunlar arasındaki boşluğu 20 piksel olarak belirtir.*/
+    padding: 20px;
+}
+
+button{
+    height: 60px;
+    font-size: 20px;
+}
+
+.calculator-screen{
+    width: 100%;
+    height: 80px;
+    border: none;
+    text-align: right;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.equal-sign{
+    height: 98%;
+    grid-area: 2 / 4 / 6 / 5;
+}
